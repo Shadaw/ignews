@@ -1,13 +1,9 @@
-import { useRouter } from 'next/router';
-
 import { ActiveLink } from '../ActiveLink';
 import { SignInButton } from '../SignInButton';
 
 import { Container, Content } from './styles';
 
 export function Header() {
-  const { asPath } = useRouter();
-
   return (
     <Container>
       <Content>
