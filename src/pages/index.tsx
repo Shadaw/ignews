@@ -9,7 +9,7 @@ import { Container, Hero } from '../styles/home';
 interface HomeProps {
   product: {
     priceId: string;
-    amount: number;
+    amount: string;
   }
 }
 
@@ -31,7 +31,7 @@ export default function Home({ product }: HomeProps) {
             Get acess to all the publications <br />
             <span>for {product.amount} month</span>
           </p>
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </Hero>
 
         <img src="/images/avatar.svg" alt="girl codding" />
